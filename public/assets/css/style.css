@@ -1,0 +1,65 @@
+body {
+	background-color: #ffd951;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.availableList {
+	margin-bottom: 2px;
+}
+
+.burgerRow {
+	margin-bottom: 20px;
+}
+
+.devourButton {
+	font-family: 'Special Elite', cursive;
+	position: absolute;
+	top: 0px;
+}
+
+.title {
+	text-align: center;
+	font-family: 'Slackey', cursive;
+	font-size: 48px;
+}
+
+
+.burgerImage {
+	display: block;
+	margin: 0 auto;
+	/*size: 5%;*/
+}
+
+.sectionTitle {
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	margin-bottom: 20px;
+}
+
+.burgerList {
+	font-family: 'Amatica SC', cursive;
+	font-size: 22px;
+	font-weight: bold;
+}
+.addButton {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-family: 'Special Elite', cursive;
+}
+
+.addLabel {
+	font-family: 'Special Elite', cursive;
+}

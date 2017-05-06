@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2 class="sectionTitle">Burger Wishlist</h2>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div class="row burgerRow">
+              <div class="col-md-6 burgerList">
+                  {{this.id}}. {{this.name}}            
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <form action="/{{this.id}}?_method=PUT" method="POST">
+                    <input type="hidden" name="devoured" value="true">
+                    <button class="devourButton" type="submit">Devour It</button>
+                  </form>   
+                </div> 
+              </div>              
+            </div>
+          {{/unless}}
+        {{/each}}
+    </div>
+    <div class="col-md-4">
+      <div class="row">
+        <h2 class="sectionTitle">Add a Burger</h2>
+          <form class="create-update-form" action="/" method="POST">
+
+            <div class="form-group">
+              <label class="addLabel" for="burger">Burger Name:</label>
+              <input type="text" id="burger" name="name">
+            </div>
+            <button class="addButton" type="submit">Add Burger</button>
+          </form>           
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2 class="sectionTitle">Devoured Burgers</h2>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <p class="burgerList">
+              {{this.id}}. {{this.name}}
+            </p>
+          {{/if}}
+        {{/each}}
+    </div>
+  </div>
+</div>
